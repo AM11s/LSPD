@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Recrutement — LSPD</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Formulaire de recrutement — LSPD</h1>
+    <nav>
+      <a href="index.html">Accueil</a> |
+      <a href="manuel.html">Manuel</a> |
+      <a href="regles.html">Règles</a>
+    </nav>
+  </header>
+  <main>
+    <p>Remarque: ce formulaire envoie les réponses à Formspree. Remplacez <strong>YOUR_FORMSPREE_ID</strong> dans l'attribut `action` par votre identifiant Formspree.</p>
+
+    <form id="recruitForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="form-grid">
+      <div>
+        <label>Nom du personnage (RP)
+          <input type="text" name="character_name" required placeholder="Ex : Jean Dupont">
+        </label>
+      </div>
+
+      <div>
+        <label>Nom Discord
+          <input type="text" name="discord_name" required placeholder="Ex : Jean#1234">
+        </label>
+      </div>
+
+      <div>
+        <label>ID Discord
+          <input type="text" name="discord_id" required pattern="[0-9]{17,20}" placeholder="ID numérique Discord">
+        </label>
+      </div>
+
+      <div class="full">
+        <label>Expérience RP (courte description)
+          <textarea name="experience" rows="4" placeholder="Décrivez votre expérience RP"></textarea>
+        </label>
+      </div>
+
+      <div class="full">
+        <label>Question de mise en situation (décrivez comment vous réagiriez face à un vol en cours)
+          <textarea name="scenario_answer" rows="6" required placeholder="Ex : J'appellerais les renforts, sécuriserais la scène..."></textarea>
+        </label>
+      </div>
+
+      <input type="hidden" name="_subject" value="Nouvelle candidature LSPD">
+      <div class="full">
+        <button type="submit">Envoyer la candidature</button>
+      </div>
+    </form>
+
+    <div id="formMessage" aria-live="polite"></div>
+  </main>
+  <footer>
+    <p>© LSPD — RP</p>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

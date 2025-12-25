@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="b" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffd24a"/>
+      <stop offset="1" stop-color="#ffb84a"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(100,100)">
+    <path d="M0,-80 L42,-50 L60,0 L42,50 L0,80 L-42,50 L-60,0 L-42,-50 Z" fill="#0b2b4a"/>
+    <circle r="40" fill="url(#b)"/>
+    <text x="0" y="6" font-family="Arial,Helvetica" font-size="28" fill="#082034" text-anchor="middle">LSPD</text>
+  </g>
+</svg>

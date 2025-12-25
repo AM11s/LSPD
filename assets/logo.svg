@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#2b6ef6"/>
+      <stop offset="1" stop-color="#1f4bb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="16" fill="#081329"/>
+  <circle cx="60" cy="50" r="28" fill="url(#g)" opacity="0.95"/>
+  <path d="M60 36 L67 54 L49 54 Z" fill="#fff" opacity="0.95"/>
+  <text x="60" y="98" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#9fb7d9" text-anchor="middle">LSPD</text>
+</svg>
