@@ -7,13 +7,20 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Manuel des branches — LSPD</h1>
-    <nav>
-      <a href="index.html">Accueil</a> |
-      <a href="regles.html">Règles</a> |
-      <a href="recrutement.html">Recrutement</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="LSPD logo" class="logo">
+        <div>
+          <h1>Manuel des branches — LSPD</h1>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="regles.html">Règles</a>
+        <a href="recrutement.html">Recrutement</a>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="toc">
@@ -27,59 +34,99 @@
       </ul>
     </section>
 
-    <section id="patrol">
-      <h2>Patrouille</h2>
-      <p>Rôle principal: maintien de l'ordre, réponses aux appels, contrôles routiers. Communication RP, respect des procédures d'arrestation et de sécurité.</p>
-      <h4>Tâches principales</h4>
-      <ul>
-        <li>Patrouiller les zones attribuées et répondre aux appels RP.</li>
-        <li>Effectuer des contrôles routiers et rédiger les rapports.</li>
-        <li>Assurer la sécurité publique et coordonner avec dispatch.</li>
+    <section id="patrol" class="branch-card patrol">
+      <h2>🚓 Patrouille</h2>
+      <p><strong>Mission :</strong> Maintenir l'ordre public, répondre aux appels d'urgence, assurer une présence visible et rassurante dans la ville.</p>
+      <ul class="branch-tasks">
+        <li>Patrouiller les zones attribuées et intervenir rapidement sur les incidents.</li>
+        <li>Effectuer des contrôles routiers, vérifier les identités et prévenir les infractions.</li>
+        <li>Rédiger des rapports détaillés après chaque intervention.</li>
+        <li>Communiquer efficacement avec le dispatch et les autres unités.</li>
       </ul>
+      <div class="branch-rules">
+        <h4>Règles spécifiques Patrouille</h4>
+        <ul>
+          <li>Respecter la procédure d'interpellation (annonce, sommation, menottage).</li>
+          <li>Ne jamais quitter son secteur sans autorisation.</li>
+          <li>Utiliser la radio pour signaler tout déplacement ou incident.</li>
+          <li>Prioriser la désescalade et la sécurité des civils.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="traffic">
-      <h2>Traffic</h2>
-      <p>Gère les accidents, infractions routières et la sécurité sur les axes principaux.</p>
-      <h4>Procédure d'accident</h4>
-      <ol>
-        <li>Assurer la sécurité du lieu (baliser, demander renforts si nécessaire).</li>
-        <li>Prendre les déclarations et rassembler les preuves RP (photos, témoignages).</li>
-        <li>Rédiger un rapport d'accident et suivre les procédures internes.</li>
-      </ol>
-    </section>
-
-    <section id="investigations">
-      <h2>Investigations</h2>
-      <p>Enquêtes sur crimes majeurs, collecte de preuves, coordination avec autres unités RP.</p>
-      <h4>Bonnes pratiques</h4>
-      <ul>
-        <li>Ne pas divulguer d'informations sensibles hors canal sécurisé.</li>
-        <li>Documenter les indices et coordonner avec l'équipe pour perquisitions RP.</li>
+    <section id="traffic" class="branch-card traffic">
+      <h2>🚦 Traffic</h2>
+      <p><strong>Mission :</strong> Gérer la circulation, sécuriser les axes principaux, intervenir sur les accidents et infractions routières.</p>
+      <ul class="branch-tasks">
+        <li>Surveiller les grands axes et points sensibles de la ville.</li>
+        <li>Intervenir rapidement sur les accidents et fluidifier la circulation.</li>
+        <li>Sanctionner les infractions (excès de vitesse, conduite dangereuse, etc.).</li>
+        <li>Former les agents à la sécurité routière.</li>
       </ul>
+      <div class="branch-rules">
+        <h4>Règles spécifiques Traffic</h4>
+        <ul>
+          <li>Respecter la procédure d'accident : balisage, prise de témoignages, rapport détaillé.</li>
+          <li>Ne jamais bloquer la circulation sans raison valable.</li>
+          <li>Utiliser les gyrophares uniquement en intervention.</li>
+          <li>Collaborer avec la Patrouille pour les contrôles conjoints.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="squad">
-      <h2>SWAT / Unité tactique</h2>
-      <p>Interventions à haut risque, prises d'otages, opérations planifiées.</p>
-      <h4>Engagements</h4>
-      <ul>
-        <li>Planifier et exécuter l'entrée tactique en respectant les règles RP.</li>
-        <li>Utiliser les ressources spécialisées et assurer la sécurité des civils.</li>
+    <section id="investigations" class="branch-card investigations">
+      <h2>🕵️‍♂️ Investigations</h2>
+      <p><strong>Mission :</strong> Mener des enquêtes sur les crimes majeurs, collecter et analyser les preuves, coordonner les opérations de filature et d'arrestation.</p>
+      <ul class="branch-tasks">
+        <li>Recueillir les témoignages et preuves sur les scènes de crime.</li>
+        <li>Analyser les indices et rédiger des rapports d'enquête détaillés.</li>
+        <li>Organiser des filatures et surveillances discrètes.</li>
+        <li>Collaborer avec les autres branches pour les opérations d'envergure.</li>
       </ul>
+      <div class="branch-rules">
+        <h4>Règles spécifiques Investigations</h4>
+        <ul>
+          <li>Confidentialité absolue sur les dossiers en cours.</li>
+          <li>Respecter la chaîne de preuve (photos, scellés, inventaires).</li>
+          <li>Ne jamais agir seul sur une intervention à risque.</li>
+          <li>Informer la hiérarchie de toute avancée majeure.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="procedures">
-      <h2>Procédures communes</h2>
-      <ul>
-        <li>Priorité RP et sécurité</li>
-        <li>Rapports clairs et structurels (incident, arrestation, rapport journalier)</li>
-        <li>Communication: utiliser le canal radio RP et noter les logs</li>
+    <section id="squad" class="branch-card swat">
+      <h2>🔫 SWAT / Unité tactique</h2>
+      <p><strong>Mission :</strong> Intervenir sur les situations à haut risque : prises d'otages, forcenés, opérations planifiées et arrestations dangereuses.</p>
+      <ul class="branch-tasks">
+        <li>Planifier chaque intervention avec briefing obligatoire.</li>
+        <li>Utiliser l'équipement spécialisé (boucliers, armes non létales, etc.).</li>
+        <li>Assurer la sécurité des civils et des collègues avant tout.</li>
+        <li>Coordonner avec les autres branches pour le soutien logistique.</li>
+      </ul>
+      <div class="branch-rules">
+        <h4>Règles spécifiques SWAT</h4>
+        <ul>
+          <li>Respecter la chaîne de commandement lors des opérations.</li>
+          <li>Ne jamais engager sans ordre du chef d'équipe.</li>
+          <li>Utiliser la force de manière proportionnée et justifiée.</li>
+          <li>Débriefer chaque intervention pour améliorer les procédures.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="procedures" class="branch-card common">
+      <h2>📋 Procédures communes</h2>
+      <ul class="branch-tasks">
+        <li>Priorité à la sécurité et à l'immersion RP.</li>
+        <li>Rapports clairs et structurés (incident, arrestation, rapport journalier).</li>
+        <li>Communication : utiliser le canal radio RP et noter les logs importants.</li>
+        <li>Respect de la hiérarchie et des consignes de service.</li>
       </ul>
     </section>
   </main>
+  <hr class="separator">
   <footer>
-    <p>© LSPD — RP</p>
+    <p>© LSPD — RP — Manuel enrichi, usage roleplay uniquement.</p>
   </footer>
   <script src="js/main.js" defer></script>
 </body>

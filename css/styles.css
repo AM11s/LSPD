@@ -1,3 +1,18 @@
+/* Styles pour manuel.html (branches) */
+.branch-card{background:var(--glass);border:1.5px solid #1f6feb22;padding:18px 18px 12px 18px;margin:24px auto 24px auto;border-radius:14px;box-shadow:0 2px 16px #1f6feb11;max-width:900px;transition:box-shadow 0.2s,transform 0.2s}
+.branch-card:hover{box-shadow:0 6px 32px #1f6feb33;transform:scale(1.02)}
+.branch-card h2{margin-top:0;font-size:1.5rem;letter-spacing:0.5px}
+.branch-tasks{margin:10px 0 10px 0;padding-left:20px;color:var(--text)}
+.branch-tasks li{margin-bottom:4px;list-style:disc inside}
+.branch-rules{background:rgba(31,111,235,0.07);border-left:4px solid var(--accent);padding:10px 16px;margin:14px 0 0 0;border-radius:8px}
+.branch-rules h4{margin:0 0 6px 0;color:var(--accent);font-size:1.08rem}
+.branch-rules ul{margin:0;padding-left:18px}
+.branch-rules li{margin-bottom:3px;list-style:square inside}
+.patrol{border-left:6px solid #1f6feb}
+.traffic{border-left:6px solid #ffd24a}
+.investigations{border-left:6px solid #4ad1ff}
+.swat{border-left:6px solid #ff4a4a}
+.common{border-left:6px solid #9aa4b2}
 :root{--bg:#0f1724;--card:#071428;--accent:#1f6feb;--muted:#9aa4b2;--text:#e6eef8;--glass:rgba(255,255,255,0.03)}
 *{box-sizing:border-box}
 body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,#081225 0%, var(--bg) 100%);color:var(--text);line-height:1.5}
